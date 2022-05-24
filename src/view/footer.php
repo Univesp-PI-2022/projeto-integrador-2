@@ -52,9 +52,9 @@
             <!-- Redes Sociais -->
             <div class="col pt-3">
                 <ul style="list-style: none;">
-                    <li class="p-2"> <img src="./src/public/images/facebook .png" alt="icone facebook"></li>
-                    <li class="p-2"><img src="./src/public/images/whatsapp.png" alt="icone facebook"></li>
-                    <li class="p-2"><img src="./src/public/images/instagram.png" alt="icone facebook"></li>
+                    <li class="p-2"> <img src="../public/images/facebook .png" alt="icone facebook"></li>
+                    <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone facebook"></li>
+                    <li class="p-2"><img src="../public/images/instagram.png" alt="icone facebook"></li>
                 </ul>
             </div>
         </div>
