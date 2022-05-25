@@ -37,7 +37,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nossos projetos</a>
+                            <a class="nav-link" href="src/view/nossos-projetos.php">Nossos projetos</a>
                         </li>
 
                         <li class="nav-item">

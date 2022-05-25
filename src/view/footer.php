@@ -1,5 +1,5 @@
 </div>
-<footer style="background-color:#FFE977 ;">
+<footer style="background-color:#FFE977 ;" class="mb-0">
     <!--Footer  -->
     <div class="container">
         <div class="row">
