@@ -1,5 +1,5 @@
 <?php
-require_once "../view/header.php";
+include_once("header.php");
 
 ?>
 
@@ -25,6 +25,6 @@ require_once "../view/header.php";
 </main>
 
 <?php
-require_once "../view/footer.php"
+include_once("footer.php");
 
 ?>
