@@ -41,20 +41,26 @@
                 </div>
                 <div class="row">
                     <ul>
-                        <li>Início</li>
-                        <li>Quem somos</li>
-                        <li>Nossos Projetos</li>
-                        <li>Entre em contato</li>
-                        <li>Blog</li>
+
+                        <li> <a class="nav-link active" aria-current="page" href="index.php">Início</a></li>
+                        <li><a class="nav-link" href="quem-somos.php">Quem somos</a></li>
+                        <li><a class="nav-link" href="nossos-projetos.php">Nossos projetos</a></li>
+                        <li><a class="nav-link" href="contato.php">Ente em contato</a></li>
+                        <li> <a class="nav-link" href="blog.php">Blog</a></li>
                     </ul>
                 </div>
             </div>
             <!-- Redes Sociais -->
             <div class="col pt-3">
                 <ul style="list-style: none;">
+
                     <li class="p-2"> <img src="../public/images/facebook .png" alt="icone facebook"></li>
-                    <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone facebook"></li>
-                    <li class="p-2"><img src="../public/images/instagram.png" alt="icone facebook"></li>
+                    <a href="https://wa.me/5511981923972" target="_blank">
+                        <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone whatsapp"></li>
+                    </a>
+                    <a href="https://www.instagram.com/pracasolidaria/" target="_blank">
+                        <li class="p-2"><img src="../public/images/instagram.png" alt="icone instagram"></li>
+                    </a>
                 </ul>
             </div>
         </div>
