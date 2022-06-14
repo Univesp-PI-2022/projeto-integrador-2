@@ -6,43 +6,6 @@ require_once "header.php";
 
 <main>
 
-    <!-- Alerta de doações necesssárias  -->
-    <div class="container">
-        <div class="alert alert-warning" role="alert">
-            Estamos precisando de doação de arroz. Clique aqui para e saiba mais como nos ajudar!
-        </div>
-    </div>
-
-    <!-- Carousel  -->
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://media.istockphoto.com/photos/volunteer-with-donation-box-with-clothes-picture-id1309112046" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://media.istockphoto.com/photos/millennial-woman-is-taking-a-box-of-food-and-drink-at-the-food-and-picture-id1318880638" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://media.istockphoto.com/photos/donation-concept-the-volunteer-giving-a-donate-box-to-the-recipient-picture-id1353332258" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
     <!-- Banner e reders sociais  -->
     <div class="container pt-3 ">
         <div class="card mb-3">
