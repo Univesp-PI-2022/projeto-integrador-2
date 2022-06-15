@@ -28,6 +28,7 @@
 
             <!-- Cadastro -->
             <form class=" g-3 needs-validation p-5" novalidate action="../controller/add-user.php" method="POST">
+
                 <div class="col-md-4">
                     <label for="name" class="form-label">Nome completo</label>
                     <input type="text" class="form-control" name="user[name]" id="name" required>
@@ -53,11 +54,23 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <label for="password" class="form-label">Senha</label>
-                    <input type="password" class="form-control" name="user[password]" id="password" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
+                    <div class="input-group ">
+                        <input type="password" class="form-control" name="user[password]" id="password" required>
+                        <div class="valid-feedback">
+                            Senha válida!
+                        </div>
+                        <div class="invalid-feedback">
+                            Sua senha deve ter:
+                            <ul>
+                                <li>Deve ter tamanho mínimo 6 e no máximo 15 caracteres</li>
+                                <li> Deve ter somente letras e numero e caractere especial(!#@$%&)</li>
+                                <li>Deve ter no mínimo uma letra maiúscula e minúscula</li>
+                                <li> Deve ter no mínimo um número</li>
+                                <li> Deve ter no mínimo caractere especial(!#@$%&)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

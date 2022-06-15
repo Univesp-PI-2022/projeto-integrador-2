@@ -16,16 +16,16 @@ require_once "header.php";
                     </div>
                     <div class="row m-2">
                         <div class="col-1">
-                            <img src="./src/public/images/facebook .png" alt="icone facebook">
+                            <img src="../public/images/facebook .png" alt="icone facebook">
                         </div>
 
                         <div class="col-1">
-                            <img src="./src/public/images/whatsapp.png" alt="icone facebook">
+                            <img src="../public/images/whatsapp.png" alt="icone facebook">
 
                         </div>
 
                         <div class="col-1">
-                            <img src="./src/public/images/instagram.png" alt="icone facebook">
+                            <img src="../public/images/instagram.png" alt="icone facebook">
 
                         </div>
                     </div>
@@ -101,7 +101,7 @@ require_once "header.php";
 
     <div class="container">
         <div class="row">
-            <p class="text-end">Acompanhe nossas instagram.</p>
+            <p class="text-end">Acompanhe nosso instagram.</p>
         </div>
 
         <div class="row">
