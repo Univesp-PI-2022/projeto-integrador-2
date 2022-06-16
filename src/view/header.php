@@ -17,13 +17,14 @@
     <title>Projeto integrador 2</title>
 </head>
 
-<body class="bg-light ">
+<body class="sem_margem bg-light ">
     <!-- NavBar -->
 
-    <div class="container p-5 ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="sem_margem">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id = "menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">ONG PROJETO Brasil</a>
+                <a id="logo" href="">ONG Projeto Brasil </class></a>
+                    
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,29 +61,29 @@
         </nav>
 
         <!-- Alerta de doações necesssárias  -->
-        <div class="container">
-            <div class="alert alert-warning" role="alert">
-                Estamos precisando de doação de arroz. Clique aqui para e saiba mais como nos ajudar!
+        <div class="sem_margem">
+            <div class="alert alert-warning" role="alert" id = "aviso">
+                <center>Estamos precisando de doação de arroz. Clique aqui para e saiba mais como nos ajudar!</center>
             </div>
         </div>
 
         <!-- Carousel  -->
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+        <div class="sem_margem">
+            <div id="carouselExampleIndicators" class="carousel slide sem_margem" data-bs-ride="carousel">
+                <div class="carousel-indicators sem_margem">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner sem_margem">
                     <div class="carousel-item active">
-                        <img src="../public/images/festa-praca-solidaria.svg" class="d-block w-100" alt="festa na praça solidaria">
+                        <img src="../public/images/Slide_1.png" class="d-block w-100" alt="festa na praça solidaria">
                     </div>
                     <div class="carousel-item">
-                        <img src="../public/images/cachoro-com-cobertas.svg" class="d-block w-100" alt="cachorro na coberta">
+                        <img src="../public/images/Slide_2.png" class="d-block w-100" alt="cachorro na coberta">
                     </div>
                     <div class="carousel-item">
-                        <img src="../public/images/pao-solidario.svg" class="d-block w-100" alt="foto de um pão caseiro">
+                        <img src="../public/images/Slide_3.png" class="d-block w-100" alt="foto de um pão caseiro">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

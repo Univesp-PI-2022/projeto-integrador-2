@@ -1,57 +1,54 @@
 </div>
 <footer style="background-color:#FFE977 ;" class="mb-0">
     <!--Footer  -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <!-- Logo da ong -->
+            
             <div class="col-5">
+                
                 <div class="row">
                     <!--Logo  -->
-                    <div class="col">
-                        <div class="card" style="width: 10rem;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2151/2151295.png" class="card-img-top" alt="...">
+                    <div class="col sem_padding">
+                        <div class="contain" style="width: 10rem;">
+                            <img id="bolinhas_1" class="bolinhas" src="/src/public/images/Pattern_Rock.svg" alt="bolinhas">
+                            <img id="bandeira" src="/src/public/images/bandeira.svg" alt="bandeira do Brasil">
                         </div>
+
                     </div>
                     <!-- Texto -->
-                    <div class="col">
-                        <h3>ong projeto</h3>
-                        <h3>Brasil</h3>
+                    <div class="col logo_footer">
+                        <a id="logo" href="">ONG Projeto Brasil </class></a>
                     </div>
                 </div>
             </div>
             <!--Endereço -->
-            <div class="col">
+            <div class="col footer_infos">
                 <div class="row">
-                    <p class="text-center">Entre em contato conosco</p>
+                    <p class="text"><b>Entre em contato conosco</b></p>
                 </div>
                 <div class="row">
-                    <p class="text-center">Telefone: 4665-2538</p>
-                </div>
-                <div class="row">
-                    <p class="text-center">Rua Dom José Alves, 251</p>
-                </div>
-                <div class="row">
-                    <p class="text-center">Bairro da paz, São Paulo,SP</p>
+                    <p class="text">Telefone: 4665-2538 <br> Rua Dom José Alves, 251 <br> Bairro da paz, São Paulo,SP</p>
                 </div>
             </div>
             <!-- Mapa do site -->
-            <div class="col">
+            <div class="col footer_infos">
                 <div class="row">
-                    <p class="text">Mapa do site</p>
+                    <p class="text"><b>Mapa do site</b></p>
                 </div>
-                <div class="row">
+                <div class="row mapa">
                     <ul>
-
-                        <li> <a class="nav-link active" aria-current="page" href="index.php">Início</a></li>
-                        <li><a class="nav-link" href="quem-somos.php">Quem somos</a></li>
-                        <li><a class="nav-link" href="nossos-projetos.php">Nossos projetos</a></li>
-                        <li><a class="nav-link" href="contato.php">Ente em contato</a></li>
-                        <li> <a class="nav-link" href="blog.php">Blog</a></li>
+                        <li><a class="nav-link active sem_padding" aria-current="page" href="index.php">Início</a></li>
+                        <li><a class="nav-link sem_padding" href="quem-somos.php">Quem somos</a></li>
+                        <li><a class="nav-link sem_padding" href="nossos-projetos.php">Nossos projetos</a></li>
+                        <li><a class="nav-link sem_padding" href="contato.php">Ente em contato</a></li>
+                        <li><a class="nav-link sem_padding" href="blog.php">Blog</a></li>
                     </ul>
                 </div>
             </div>
             <!-- Redes Sociais -->
             <div class="col pt-3">
+                
                 <ul style="list-style: none;">
 
                     <li class="p-2"> <img src="../public/images/facebook .png" alt="icone facebook"></li>
@@ -60,14 +57,16 @@
                     </a>
                     <a href="https://www.instagram.com/pracasolidaria/" target="_blank">
                         <li class="p-2"><img src="../public/images/instagram.png" alt="icone instagram"></li>
+
                     </a>
                 </ul>
+                
             </div>
         </div>
-
-        <div class="row">
-            <p>© Nomes - UNIVESP</p>
-        </div>
+    </div>
+    <div style="background-color:#F9DA39 ;">
+        <p  id = "copywriting">© Nomes - UNIVESP</p>
+        
     </div>
 </footer>
 </body>
