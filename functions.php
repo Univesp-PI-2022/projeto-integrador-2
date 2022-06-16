@@ -11,5 +11,3 @@ function getUrlFile($nomeCompletoDaClasse)
 
     return $caminhoArquivo;
 }
-
-
