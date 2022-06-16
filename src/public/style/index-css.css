@@ -1,7 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;500&display=swap');
+
 .col.imgs-insta {
   padding: 0;
 }
-
+.container_s{
+  margin-left: 0%;
+  margin-right: 0%;
+}
 .carousel-inner img {
-  height: 450px; 
+  height: auto; 
+}
+
+.sem_margem {
+  margin: 0% !important;
+}
+
+#menu{
+  padding:13px 0px 13px 0px !important;
+}
+
+#logo {
+  font-family: Mohave;
+  font-size: 27px;
+  font-weight: 300;
+  margin-right: 40px !important;
+  margin-left: 3px !important;
+  text-decoration: none;
+  color: #000000 !important;
+  position: relative;
+}
+.verde {
+  color: rgb(3,104,25) !important;
+  font-family: Mohave;
+  font-size: 27px;
+  font-weight: 300;
+  margin-right: 40px !important;
+}
+
+#aviso{
+  padding: 7px 0px 7px 0px !important;
+  margin: 0%;
+  background-color: #FFE977;
+  border-color: #FFE977;
+}
+
+#copywriting {
+  margin: 0% !important;
+  padding: 7px !important;
+}
+
+.contain{
+  position: relative !important;
+}
+#bandeira {
+  padding-top: 50px;
+  padding-left: 80%;
+  align-items: flex-end;
+  position: absolute !important;
+  height: 125px;
+}
+
+
+#bolinhas_2 {
+  transform: rotate(270deg) !important;
+}
+
+#bolinhas_3 {
+  transform: rotate(90deg) !important;
+}
+
+.bolinhas {
+  height: 170px;
+  position: absolute !important;
+  
+}
+
+.footer_infos p{
+  margin-bottom: 10px;
+}
+
+.sem_padding{
+  padding: 0% !important;
+}
+
+.logo_footer{
+  margin-top: 69px !important;
+  padding-left: 0%;
+}
+
+.mapa{
+  margin-left: 7px !important;
+  text-decoration: none;
+}
+
+.mapa a{
+  color: #000000 !important;
+}
+
+.mapa a:hover {
+  color: #327225 !important;
+}
+
+footer {
+  font-size: 0.85em;
+  margin-top: 50px;
+}
+
+.footer_infos {
+  padding-top: 18px;
 }
