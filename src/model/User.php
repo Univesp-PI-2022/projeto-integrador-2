@@ -124,28 +124,30 @@ class User extends DatabaseCon
 
     public function registerUser()
     {
-        $user = new DatabaseCon("usuarios");
+        $user = new DatabaseCon("users");
+
         $user->insert([
-            "nome" => $this->getName(),
-            "emails" => json_encode($this->getEmails()),
-            "telefones" => json_encode($this->getPhones())
+            "name" => $this->getName(),
+            "email" => $this->getEmail(),
+            "password" => $this->getPassword()
         ]);
+
         return true;
     }
 
 
     public function updateUser()
     {
-        return (new DatabaseCon("usuarios"))->update("ID = " . $this->ID, [
-            "nome" => $this->getName(),
-            "emails" => json_encode($this->getEmails()),
-            "telefones" => json_encode($this->getPhones())
+        return (new DatabaseCon("usuarios"))->update("id = " . $this->id, [
+            "name" => $this->getName(),
+            "email" => $this->getEmail(),
+            "password" => $this->getPassword()
         ]);
     }
 
 
     public function deleteUser()
     {
-        return (new DatabaseCon("usuarios"))->delete("ID = " . $this->ID);
+        return (new DatabaseCon("usuarios"))->delete("id = " . $this->id);
     }
 }
