@@ -51,7 +51,7 @@
                 
                 <ul style="list-style: none;">
 
-                    <li class="p-2"> <img src="../public/images/facebook .png" alt="icone facebook"></li>
+                    <li class="p-2"> <img src="../public/images/facebook.png" alt="icone facebook"></li>
                     <a href="https://wa.me/5511981923972" target="_blank">
                         <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone whatsapp"></li>
                     </a>

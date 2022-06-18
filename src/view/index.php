@@ -16,16 +16,16 @@ require_once "header.php";
                     </div>
                     <div class="row m-2">
                         <div class="col-1">
-                            <img src="../public/images/facebook .png" alt="icone facebook">
+                            <img src="../public/images/facebook.png" alt="icone facebook">
                         </div>
 
                         <div class="col-1">
-                            <img src="../public/images/whatsapp.png" alt="icone facebook">
+                            <img src="../public/images/whatsapp.png" alt="icone whatsapp">
 
                         </div>
 
                         <div class="col-1">
-                            <img src="../public/images/instagram.png" alt="icone facebook">
+                            <img src="../public/images/instagram.png" alt="icone instagram">
 
                         </div>
                     </div>

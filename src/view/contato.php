@@ -22,7 +22,7 @@ require_once "../view/header.php";
                             <p class="p-2"><img src="../public/images/instagram.png" alt="icone instagram"> @pracasolidaria</p>
                         </div>
                         <div class="col">
-                            <p class="p-2"><img src="../public/images/facebook .png" alt="icone facebook"> @pracasolidaria</p>
+                            <p class="p-2"><img src="../public/images/facebook.png" alt="icone facebook"> @pracasolidaria</p>
                         </div>
 
                     </div>
