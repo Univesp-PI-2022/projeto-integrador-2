@@ -2,12 +2,10 @@
 require_once "config.php";
 
 
-function getUrlFile($nomeCompletoDaClasse)
-{
-    $basePath = __DIR__ . DIRECTORY_SEPARATOR;
 
-    $caminhoArquivo = str_replace('/', DIRECTORY_SEPARATOR, $basePath . $nomeCompletoDaClasse);
-    $caminhoArquivo = str_replace($basePath,"", $caminhoArquivo );
 
-    return $caminhoArquivo;
+if (password_verify('#Rcs84169130', "$2y$10$2TLa7yDiJz344/G1BCsl6uACsvy3lYwu66kwIUMQ26QdDOvxOx2G6")) {
+    echo 'Password is valid!';
+} else {
+    echo 'Invalid password.';
 }

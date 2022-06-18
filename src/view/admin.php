@@ -39,10 +39,13 @@
                         </li>
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Usuário</span> </a>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar</span></a>
+                                    <a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar usuário</span></a>
+                                </li>
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
                                 </li>
                                 <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
@@ -74,12 +77,6 @@
                                 </li>
                                 <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
                                 </li>
                             </ul>
                         </li>

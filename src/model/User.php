@@ -99,9 +99,12 @@ class User extends DatabaseCon
      *
      * @return  self
      */
-    public function setPassword($password)
+    public function setPassword(string $password)
     {
-        $this->password = $password;
+
+        $hashPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $this->password = $hashPassword;
 
         return $this;
     }
@@ -124,15 +127,15 @@ class User extends DatabaseCon
 
     public function registerUser()
     {
-        $user = new DatabaseCon("users");
+        $databaseCon = new DatabaseCon("users");
 
-        $user->insert([
+        $registered =  $databaseCon->insert([
             "name" => $this->getName(),
             "email" => $this->getEmail(),
             "password" => $this->getPassword()
         ]);
 
-        return true;
+        return $registered;
     }
 
 
