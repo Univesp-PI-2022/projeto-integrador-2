@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/pilamp/subdomains/pracasolidaria/www/
+    - /bin/cp -R ./ $DEPLOYPATH
