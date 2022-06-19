@@ -18,10 +18,15 @@ if (isset($_POST['user']['name'], $_POST['user']['email'], $_POST['user']['passw
         header("Location: ../view/admin.php?status=error02");
         exit;
     } else {
-        header("Location: ../view/admin.php?status=success");
+        header("Location: ../view/admin.php?status=success-add-user");
         exit;
     }
 } else {
     header("Location: ../view/admin.php?status=error01");
     exit;
 }
+
+/* 
+error01 -> Valores não recebidos;
+error02 -> Falha no banco de dados;
+*/

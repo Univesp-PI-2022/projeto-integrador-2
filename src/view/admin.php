@@ -33,7 +33,7 @@
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
+                            <a href="../view/index.php" class="nav-link align-middle px-0">
                                 <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
                             </a>
                         </li>
@@ -105,6 +105,41 @@
             </div>
 
             <div class="container" id="form-user-registration">
+
+                <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                    if ($_GET['status'] === "success-add-user") { ?>
+                        <div class="alert alert-success mt-3" role="alert">
+                            Usuários cadastrado com sucesso!
+                        </div>
+                <?php
+                    }
+                }
+                ?>
+
+                <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                    if ($_GET['status'] === "error01") { ?>
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Todos os campos devem estar preenchidos!
+                        </div>
+                    <?php
+                    }
+                }
+
+                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                    if ($_GET['status'] === "error02") { ?>
+                        <div class="alert alert-danger mt-3" role="alert">
+                            Falha ao inserir usuário, tente novamente mais tarde.
+                        </div>
+                <?php
+                    }
+                }
+                ?>
+
+
                 <form class=" g-3 needs-validation p-5" action="../controller/add-user.php" method="POST">
 
                     <div class="col-md-4">
