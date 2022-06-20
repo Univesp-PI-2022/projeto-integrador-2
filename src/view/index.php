@@ -173,24 +173,43 @@ require_once "header.php";
     <!-- Assinar email postagem  -->
 
     <div class="container pt-3">
-
+        <a href="#newsletter"></a>
         <div class="d-flex justify-content-center">
             <p class="text-center">Coloque seu melhor email e fique por dentro de tudo! </p>
         </div>
 
-        <form>
-            <div class="d-flex ">
-                <div class="p-2 flex-grow-1 bd-highlight"><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></div>
-                <div class="p-2 bd-highlight"> <button type="submit" class="btn btn-primary">Submit</button></div>
+        <form action="../controller/newsletter.php" method="POST">
+            <div class="d-flex input-group">
+                <div class="p-2 flex-grow-1 bd-highlight ">
+                    <input type="email" class="form-control" id="subscribe-newsletter" name="email">
+                    <div class="valid-feedback">
+                        Email válido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Digite um email válido!
+                    </div>
+
+                    <div class="alert alert-success invisible" role="alert" id="success-subscribe-newsletter">
+                        Em breve você receberá todas as nossas novidades em seu email!
+                    </div>
+                    <div class="alert alert-danger invisible" role="alert" id="erro-subscribe-newsletter">
+                        Erro ao cadastrar email, tente novamente mais tarde!
+                    </div>
+                    <div class="alert alert-danger invisible" role="alert" id="invalid-email">
+                        Email inválido!
+                    </div>
+                    
+                </div>
+
+                <div class="p-2 bd-highlight">
+                    <button type="button" class="btn btn-primary" id="newsletter" onclick="subscribeNewsletter()">Receber atualizações</button>
+                </div>
             </div>
         </form>
+
+
+
     </div>
-
-
-
-
-
-
 
 
 </main>

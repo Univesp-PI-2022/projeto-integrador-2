@@ -13,7 +13,6 @@ if (isset($_POST['user']['name'], $_POST['user']['email'], $_POST['user']['passw
 
     $registered =  $user->registerUser();
 
-
     if ($registered === false) {
         header("Location: ../view/admin.php?status=error02");
         exit;
@@ -30,3 +29,22 @@ if (isset($_POST['user']['name'], $_POST['user']['email'], $_POST['user']['passw
 error01 -> Valores não recebidos;
 error02 -> Falha no banco de dados;
 */
+
+
+   /*  if ($subscribed === false) {
+        var_dump(http_response_code(500));
+        $response = ['status' => 'error02'];
+        var_dump($response);
+        exit;
+    } else {
+        var_dump(http_response_code(201));
+        $response = ['status' => 'success'];
+        var_dump($response);
+        exit;
+    }
+} else {
+    var_dump(http_response_code(400));
+    $response = ['status' => 'error02'];
+    var_dump($response);
+    exit;
+} */
