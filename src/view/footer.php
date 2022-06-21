@@ -11,8 +11,8 @@
                     <!--Logo  -->
                     <div class="col sem_padding">
                         <div class="contain" style="width: 10rem;">
-                            <img id="bolinhas_1" class="bolinhas" src="/src/public/images/Pattern_Rock.svg" alt="bolinhas">
-                            <img id="bandeira" src="/src/public/images/bandeira.svg" alt="bandeira do Brasil">
+                            <img id="bolinhas_1" class="bolinhas" src="/public/images/Pattern_Rock.svg" alt="bolinhas">
+                            <img id="bandeira" src="/public/images/bandeira.svg" alt="bandeira do Brasil">
                         </div>
 
                     </div>
@@ -51,12 +51,12 @@
                 
                 <ul style="list-style: none;">
 
-                    <li class="p-2"> <img src="../public/images/facebook.png" alt="icone facebook"></li>
+                    <li class="p-2"> <img src="/public/images/facebook.png" alt="icone facebook"></li>
                     <a href="https://wa.me/5511981923972" target="_blank">
-                        <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone whatsapp"></li>
+                        <li class="p-2"><img src="/public/images/whatsapp.png" alt="icone whatsapp"></li>
                     </a>
                     <a href="https://www.instagram.com/pracasolidaria/" target="_blank">
-                        <li class="p-2"><img src="../public/images/instagram.png" alt="icone instagram"></li>
+                        <li class="p-2"><img src="/public/images/instagram.png" alt="icone instagram"></li>
 
                     </a>
                 </ul>
