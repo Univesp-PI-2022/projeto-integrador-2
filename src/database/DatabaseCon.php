@@ -6,6 +6,10 @@ namespace src\database;
 use src\model\User;
 use \PDO, PDOException;
 
+define('DB_HOST',getenv("db_host"));
+define('DB_NAME',getenv("db_name"));
+define('DB_USER',getenv("db_user"));
+define('DB_PASSWORD',getenv("db_password"));
 
 class DatabaseCon
 {
@@ -14,10 +18,10 @@ class DatabaseCon
     const DBuser = "root";
     const DBpassword = ""; */
 
-    const Host = getenv("db_host");
-    const DBname = getenv("db_name");
-    const DBuser = getenv("db_user");
-    const DBpassword = getenv("db_password");
+    const Host = DB_HOST;
+    const DBname = DB_NAME;
+    const DBuser = DB_USER;
+    const DBpassword = DB_PASSWORD;
 
 
     private $table;
