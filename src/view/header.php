@@ -51,6 +51,10 @@
                             <a class="nav-link" href="blog.php">Blog</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.php">Entre</a>
+                        </li>
+
 
                     </ul>
                     <form class="d-flex">

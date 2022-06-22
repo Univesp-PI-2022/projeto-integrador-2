@@ -13,7 +13,7 @@ class DatabaseCon
     const Host = getenv("db_host");
     const DBname = getenv("db_name");
     const DBuser = getenv("db_user");
-    const DBpassword = getenv("db_password");;
+    const DBpassword = getenv("db_password");
 
 
     private $table;
