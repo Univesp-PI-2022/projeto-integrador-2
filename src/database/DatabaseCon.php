@@ -9,11 +9,15 @@ use \PDO, PDOException;
 
 class DatabaseCon
 {
-
-    const Host = "localhost";
+    /* const Host = "localhost";
     const DBname = "projeto_integrador_2";
     const DBuser = "root";
-    const DBpassword = "";
+    const DBpassword = ""; */
+
+    const Host = getenv("db_host");
+    const DBname = getenv("db_name");
+    const DBuser = getenv("db_user");
+    const DBpassword = getenv("db_password");
 
 
     private $table;
