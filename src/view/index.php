@@ -1,5 +1,13 @@
 <?php
+
+use src\database\DatabaseCon;
+
+require_once "../../autoload.php";
 require_once "header.php";
+
+
+
+
 ?>
 
 
@@ -37,62 +45,36 @@ require_once "header.php";
         </div>
     </div>
 
+
+
+
     <!-- Postagens -->
     <div class="container">
         <h4 class="m-2">Últimas postagens</h4>
         <div class="row">
-            <div class="col-3 col-sm-3">
-                <a href="#" style="text-decoration:none ;">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://media.istockphoto.com/vectors/volunteering-charity-support-concept-tiny-volunteer-characters-in-vector-id1347952455" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo da postagem</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">ler mais...</p>
 
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3 col-sm-3">
-                <a href="#" style="text-decoration:none ;">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://media.istockphoto.com/vectors/volunteering-charity-support-concept-tiny-volunteer-characters-in-vector-id1347952455" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo da postagem</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">ler mais...</p>
 
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3 col-sm-3">
-                <a href="#" style="text-decoration:none ;">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://media.istockphoto.com/vectors/volunteering-charity-support-concept-tiny-volunteer-characters-in-vector-id1347952455" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo da postagem</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">ler mais...</p>
+            <?php
 
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-3 col-sm-3">
-                <a href="#" style="text-decoration:none ;">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://media.istockphoto.com/vectors/volunteering-charity-support-concept-tiny-volunteer-characters-in-vector-id1347952455" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Titulo da postagem</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">ler mais...</p>
+            $posts = DatabaseCon::getAll(null, "creation_date DESC", "4", "posts");
 
+            foreach ($posts as  $post) { ?>
+
+                <div class="col-3 col-sm-3">
+                    <a href="#" style="text-decoration:none ;">
+                        <div class="card">
+                            <img src="../public/images/pixel.png" style="background-image:url(<?php echo $post->image ?>) ;" class="card-img-top post-image" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $post->title ?></h5>
+                                <p class="card-text"><?php echo $post->content ?></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+
+            <?php }
+
+            ?>
 
         </div>
     </div>
@@ -198,7 +180,7 @@ require_once "header.php";
                     <div class="alert alert-danger invisible" role="alert" id="invalid-email">
                         Email inválido!
                     </div>
-                    
+
                 </div>
 
                 <div class="p-2 bd-highlight">

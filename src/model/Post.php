@@ -133,4 +133,10 @@ class Post extends DatabaseCon
     {
         return (new DatabaseCon("usuarios"))->delete("id = " . $this->id);
     }
+
+
+    public function getPosts()
+    {
+        # code...
+    }
 }

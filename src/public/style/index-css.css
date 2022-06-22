@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;500&display=swap");
 
 .col.imgs-insta {
   padding: 0;
 }
-.container_s{
+.container_s {
   margin-left: 0%;
   margin-right: 0%;
 }
 .carousel-inner img {
-  height: auto; 
+  height: auto;
 }
 
 .sem_margem {
   margin: 0% !important;
 }
 
-#menu{
-  padding:13px 0px 13px 0px !important;
+#menu {
+  padding: 13px 0px 13px 0px !important;
 }
 
 #logo {
@@ -30,18 +30,18 @@
   position: relative;
 }
 .verde {
-  color: rgb(3,104,25) !important;
+  color: rgb(3, 104, 25) !important;
   font-family: Mohave;
   font-size: 27px;
   font-weight: 300;
   margin-right: 40px !important;
 }
 
-#aviso{
+#aviso {
   padding: 7px 0px 7px 0px !important;
   margin: 0%;
-  background-color: #FFE977;
-  border-color: #FFE977;
+  background-color: #ffe977;
+  border-color: #ffe977;
 }
 
 #copywriting {
@@ -49,7 +49,7 @@
   padding: 7px !important;
 }
 
-.contain{
+.contain {
   position: relative !important;
 }
 #bandeira {
@@ -59,7 +59,6 @@
   position: absolute !important;
   height: 125px;
 }
-
 
 #bolinhas_2 {
   transform: rotate(270deg) !important;
@@ -72,28 +71,27 @@
 .bolinhas {
   height: 170px;
   position: absolute !important;
-  
 }
 
-.footer_infos p{
+.footer_infos p {
   margin-bottom: 10px;
 }
 
-.sem_padding{
+.sem_padding {
   padding: 0% !important;
 }
 
-.logo_footer{
+.logo_footer {
   margin-top: 69px !important;
   padding-left: 0%;
 }
 
-.mapa{
+.mapa {
   margin-left: 7px !important;
   text-decoration: none;
 }
 
-.mapa a{
+.mapa a {
   color: #000000 !important;
 }
 
@@ -108,4 +106,13 @@ footer {
 
 .footer_infos {
   padding-top: 18px;
+}
+
+.post-image {
+  width: 100%;
+  height: 286px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f1f2f3;
+  background-position: center center;
 }

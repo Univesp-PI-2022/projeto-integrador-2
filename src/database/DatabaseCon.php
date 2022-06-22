@@ -10,10 +10,10 @@ use \PDO, PDOException;
 class DatabaseCon
 {
 
-    const Host = getenv("db_host");
-    const DBname = getenv("db_name");
-    const DBuser = getenv("db_user");
-    const DBpassword = getenv("db_password");
+    const Host = "localhost";
+    const DBname = "projeto_integrador_2";
+    const DBuser = "root";
+    const DBpassword = "";
 
 
     private $table;
@@ -86,14 +86,14 @@ class DatabaseCon
     }
 
 
-    public static function getAll($where = null, $order = null, $limit = null)
+    public static function getAll($where = null, $order = null, $limit = null, $table)
     {
-        return (new DatabaseCon("users"))->select($where, $order, $limit, "*")->fetchAll(PDO::FETCH_CLASS);
+        return (new DatabaseCon($table))->select($where, $order, $limit, "*")->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public static function getOne($id)
+    public static function getOne($id, $table)
     {
-        $user = (new DatabaseCon("users"))->select("ID = $id")->fetchObject();
+        $user = (new DatabaseCon($table))->select("id = $id")->fetchObject();
         if (!$user) {
             return null;
         }
