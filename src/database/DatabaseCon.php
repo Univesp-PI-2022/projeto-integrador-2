@@ -3,20 +3,17 @@
 namespace src\database;
 
 
-use src\model\User;
+
 use \PDO, PDOException;
 
-define('DB_HOST',getenv("db_host"));
-define('DB_NAME',getenv("db_name"));
-define('DB_USER',getenv("db_user"));
-define('DB_PASSWORD',getenv("db_password"));
+define('DB_HOST', getenv("db_host"));
+define('DB_NAME', getenv("db_name"));
+define('DB_USER', getenv("db_user"));
+define('DB_PASSWORD', getenv("db_password"));
 
 class DatabaseCon
 {
-    /* const Host = "localhost";
-    const DBname = "projeto_integrador_2";
-    const DBuser = "root";
-    const DBpassword = ""; */
+
 
     const Host = DB_HOST;
     const DBname = DB_NAME;

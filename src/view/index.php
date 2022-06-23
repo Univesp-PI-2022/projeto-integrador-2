@@ -5,9 +5,6 @@ use src\database\DatabaseCon;
 require_once "../../autoload.php";
 require_once "header.php";
 
-
-
-
 ?>
 
 
@@ -50,7 +47,11 @@ require_once "header.php";
 
     <!-- Postagens -->
     <div class="container">
-        <h4 class="m-2">Últimas postagens</h4>
+        <a href="./all-posts.php" style="text-decoration:none ;">
+            <h4 class="m-2 text-center pb-3">Últimas postagens</h4>
+        </a>
+
+
         <div class="row">
 
 
@@ -61,7 +62,7 @@ require_once "header.php";
             foreach ($posts as  $post) { ?>
 
                 <div class="col-3 col-sm-3">
-                    <a href="#" style="text-decoration:none ;">
+                    <a href="./post.php?id=<?php echo $post->id  ?>" style="text-decoration:none ;">
                         <div class="card">
                             <img src="../public/images/pixel.png" style="background-image:url(<?php echo $post->image ?>) ;" class="card-img-top post-image" alt="...">
                             <div class="card-body">
