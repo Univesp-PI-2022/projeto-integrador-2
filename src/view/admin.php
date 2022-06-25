@@ -123,7 +123,7 @@
                         //usario ADMIN hardcoded para fins de teste
                         if($_POST["user"]=="admin" && $_POST["password"]=="1nt3Gr@d0r"){
                             $_SESSION["user"]=$_POST["user"];
-                            header('Location: ' . $_SERVER['PHP_SELF']);
+                            ?><script>window.location.href="<php echo $_SERVER['PHP_SELF']; ?>"</script><?php
                         }else{
                             $_SESSION["user"]=null;
                             ?><div class="alert alert-danger mt-3" role="alert">
