@@ -10,7 +10,7 @@ require_once "../view/header.php"
         <h1 class="text-center">Conheça um pouco mais sobre nossos projetos</h1>
 
 
-        <div class="container mt-4">
+        <div class="container d-flex mt-4">
             <img width="300rem" height="300rem" src="../public/images/camp-vakinha.PNG" alt="imagem com qrcode para doações" class='float-start'>
             <div><h3>Projeto Solidário sem FOME</h3>
             <p>Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!<br>
@@ -24,7 +24,7 @@ Doe através de nossa “vaquinha” virtual.<br>
 DOE!!!</p></div>
         </div>
 
-        <div class="container mt-4">
+        <div class="container d-flex mt-4">
             <img width="300rem" height="300rem" src="../public/images/camp-paosol.PNG" alt="imagem de pães" class='float-end'>
             <div><h3>P&atilde;o Solid&aacute;rio</h3>
             <p>Pães Solidarios quem ainda não provou é só encomendar ou levar para sua casa ou seu Condominio e com isso vc estará ajudando nosso Projeto Solidario sem fome. <a href='https://wa.me/5511981923972' target='_blank'>faça sua Doação</a></p>
