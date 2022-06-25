@@ -18,6 +18,9 @@
     <title>Area Administrativa</title>
 </head>
 <style>
+    body: {
+        overflow: hidden;
+    }
     img {
         width: 100%;
         height: 100%;
@@ -148,7 +151,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-3">
                             <label for="password" class="form-label">Senha</label>
                             <div class="input-group ">
                                 <input type="password" class="form-control" name="password" id="password" required>
@@ -161,7 +164,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12 mt-3">
                             <button class="btn btn-primary" type="submit">Entrar</button>
                         </div>
                     </form>
