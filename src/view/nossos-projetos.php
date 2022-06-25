@@ -11,7 +11,7 @@ require_once "../view/header.php"
 
 
         <div class="d-flex mt-4">
-            <img width="200rem" height="200rem" src="../public/images/camp-vakinha.png" alt="imagem com qrcode para doações">
+            <img width="200rem" height="200rem" src="../public/images/camp-vakinha.PNG" alt="imagem com qrcode para doações">
             <p class="text-start">Projeto Solidário sem FOME</p>
             <p>Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!<br>
 Atuamos diretamente com moradores em situação de rua há cerca de 20 anos. Estamos na região do Morumbi e atendemos pessoas de toda a cidade de São Paulo.
@@ -28,7 +28,7 @@ DOE!!!</p>
             <p class="text-start">P&atilde;o Solid&aacute;rio</p>
             <br>
             <p>Pães Solidarios quem ainda não provou é só encomendar ou levar para sua casa ou seu Condominio e com isso vc estará ajudando nosso Projeto Solidario sem fome. <a href='https://wa.me/5511981923972' target='_blank'>faça sua Doação</a></p>
-            <img width="200rem" height="200rem" src="../public/images/camp-paosol.png" alt="">
+            <img width="200rem" height="200rem" src="../public/images/camp-paosol.PNG" alt="imagem de pães">
         </div>
     </div>
 
