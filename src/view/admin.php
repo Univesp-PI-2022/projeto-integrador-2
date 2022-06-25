@@ -173,9 +173,10 @@
             ?>    
 
                 <!-- BLOG -->
-                <h3>Blog - Postagens</h3>
 
                 <div class="container" id="blog-create-post">
+                    <h3>Blog - Postagens</h3>
+
                     <?php
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
@@ -223,9 +224,9 @@
                 </div>
 
                 <!-- CADSTRO DE USUARIOS -->
-                <h3>Usuários - Cadastro</h3>
 
                 <div class="container " id="form-user-registration">
+                    <h3>Usuários - Cadastro</h3>
 
                     <?php
 
