@@ -10,6 +10,7 @@ include_once("header.php");
 
         <div class="d-flex">
             <img width="300rem" height="300rem" src="../public/images/main-theme.PNG" alt="vamos ajudar a quem precisa e tem fome">
+            <p class="ms-3">&nbsp;</p>
             <p class="ms-3">Grupo Multidisciplinar para Inclusão Social (Grupo Brasil), hoje com o Projeto Praça Solidaria para atender prontamente a pandemia do Covid-19 em caráter emergencial atender os moradores de rua e pessoas em condições de fragilidade social e vulnerabilidade. Somos uma entidade pessoa jurídica de direito privado e sem fins lucrativos que é regido pelo Estatuto (registrado no 3º Oficial de Registro de Títulos e Documentos e Civil de Pessoas Jurídicas de São Paulo, microfilme nº 458570) e pela legislação em vigor. No desenvolvimento das nossas atividade a entidade observará os princípios da legalidade, impessoalidade, moralidade, publicidade, economicidade e da eficiência e não fará qualquer discriminação de raça, cor, gênero ou religião.
             </p>
         </div>
