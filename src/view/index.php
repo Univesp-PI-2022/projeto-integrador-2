@@ -39,7 +39,7 @@ require_once "header.php";
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="../public/images/camp-inverno.PNG" class="img-fluid rounded-start" alt="...">
+                    <img src="../public/images/donations.jpeg" class="img-fluid rounded-start" alt="...">
                 </div>
             </div>
         </div>
