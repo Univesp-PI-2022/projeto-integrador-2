@@ -62,6 +62,21 @@
                         // MOSTRA MENU
                         ?>    
                          
+                            <!-- BLOG -->
+                            
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar Postagem</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Listar Posts</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+
                             <!-- CADASTRO DE USUARIOS -->
                         
                             <li>
@@ -80,22 +95,6 @@
                                 </ul>
                             </li>
                             
-                            <!-- BLOG -->
-                            
-                            <li>
-                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar postagem</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        
                         <?php    
                         } //end if   
                         ?>
@@ -175,6 +174,58 @@
             }else{
             // PERMITE ACESSO A PAINEIS DE ADMIN
             ?>    
+
+                <!-- BLOG -->
+
+                <div class="container" id="blog-create-post">
+                    <?php
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "success-create-post") { 
+                            ?><div class="alert alert-success mt-3" role="alert">
+                                Postagem criada com sucesso!
+                            </div><?php
+                        }
+                    }
+                    ?>
+
+                    <?php
+
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "error01") { 
+                            ?><div class="alert alert-danger mt-3" role="alert">
+                                Falha ao criar, tente novamente mais tarde.
+                            </div><?php
+                        }
+                    }
+                    ?>
+
+                    <form class=" g-3 needs-validation p-5" action="../controller/create-post.php" method="POST" enctype="multipart/form-data">
+
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Título</label>
+                            <input type="text" class="form-control" name="post[title]" id="post-title" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="content" class="form-label">Texto</label>
+                            <textarea class="form-control" aria-label="" name="post[content]" id="post-content" required></textarea>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="image" class="form-label">Imagem</label>
+                            <input type="file" class="form-control pt-2" name="image" id="post-image" required>
+                        </div>
+
+                        <div class="col-12 pt-2">
+                            <button class="btn btn-primary" type="submit">Criar postagem</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- CADSTRO DE USUARIOS -->
+
                 <div class="container " id="form-user-registration">
 
                     <?php
@@ -206,7 +257,6 @@
                         }
                     }
                     ?>
-
 
                     <form class=" g-3 needs-validation p-5" action="../controller/add-user.php" method="POST">
 
@@ -257,55 +307,6 @@
 
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">Cadastrar</button>
-                        </div>
-                    </form>
-                </div>
-
-
-                <div class="container" id="blog-create-post">
-                    <?php
-
-                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "success-create-post") { 
-                            ?><div class="alert alert-success mt-3" role="alert">
-                                Postagem criada com sucesso!
-                            </div><?php
-                        }
-                    }
-                    ?>
-
-                    <?php
-
-
-                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "error01") { 
-                            ?><div class="alert alert-danger mt-3" role="alert">
-                                Falha ao criar, tente novamente mais tarde.
-                            </div><?php
-                        }
-                    }
-                    ?>
-
-
-                    <form class=" g-3 needs-validation p-5" action="../controller/create-post.php" method="POST" enctype="multipart/form-data">
-
-                        <div class="col-md-4">
-                            <label for="name" class="form-label">Título</label>
-                            <input type="text" class="form-control" name="post[title]" id="post-title" required>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="content" class="form-label">Texto</label>
-                            <textarea class="form-control" aria-label="" name="post[content]" id="post-content" required></textarea>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label for="image" class="form-label">Imagem</label>
-                            <input type="file" class="form-control pt-2" name="image" id="post-image" required>
-                        </div>
-
-                        <div class="col-12 pt-2">
-                            <button class="btn btn-primary" type="submit">Criar postagem</button>
                         </div>
                     </form>
                 </div>
