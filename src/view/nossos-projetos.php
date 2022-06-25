@@ -11,8 +11,8 @@ require_once "../view/header.php"
 
 
         <div class="d-flex mt-4">
-            <img width="300rem" height="300rem" src="../public/images/camp-vakinha.PNG" alt="imagem com qrcode para doações" class='float-left'>
-            <p class="text-start">Projeto Solidário sem FOME</p>
+            <img width="300rem" height="300rem" src="../public/images/camp-vakinha.PNG" alt="imagem com qrcode para doações" class='float-start'>
+            <div class="text-start">Projeto Solidário sem FOME</div>
             <p>Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!<br>
 Atuamos diretamente com moradores em situação de rua há cerca de 20 anos. Estamos na região do Morumbi e atendemos pessoas de toda a cidade de São Paulo.
 Servimos mais de 150 refeições e café da manhã por dia. Nos mantemos através de doações e principalmente pela venda de nossos Pães.<br>
@@ -25,8 +25,8 @@ DOE!!!</p>
         </div>
 
         <div class="d-flex mt-4">
-            <img width="300rem" height="300rem" src="../public/images/camp-paosol.PNG" alt="imagem de pães" class='float-right'>
-            <p class="text-start">P&atilde;o Solid&aacute;rio</p>
+            <img width="300rem" height="300rem" src="../public/images/camp-paosol.PNG" alt="imagem de pães" class='float-end'>
+            <div class="text-start">P&atilde;o Solid&aacute;rio</div>
             <p>Pães Solidarios quem ainda não provou é só encomendar ou levar para sua casa ou seu Condominio e com isso vc estará ajudando nosso Projeto Solidario sem fome. <a href='https://wa.me/5511981923972' target='_blank'>faça sua Doação</a></p>
         </div>
     </div>
