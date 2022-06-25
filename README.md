@@ -19,7 +19,7 @@
 
 ### PJI240Projeto Integrador Em Computação II
 
-Solução web para divulgação institucional do projeto Praça Solidária da ONG Grupo Brasil - Multidisciplinar para Inclusão Social, através de um software com framework web que utilize banco de dados, inclua script web (Javascript), nuvem, uso de API, acessibilidade, controlede versão e testes.
+Solução web para divulgação institucional do projeto Praça Solidária da ONG Grupo Brasil - Multidisciplinar para Inclusão Social, através de um software com framework web que utilize banco de dados, inclua script web (Javascript), nuvem, uso de API, acessibilidade, controle de versão e testes.
 
 ### Abordagem
 
