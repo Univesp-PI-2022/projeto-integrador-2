@@ -23,9 +23,9 @@ Solução web para divulgação institucional do projeto Praça Solidária da ON
 
 ### Abordagem
 
-Aprimor a Solução Web desenvolvida no PI passado para divulgação institucional do Projeto Praça Solidária
+Aprimorar a Solução Web desenvolvida no PI passado para divulgação institucional do Projeto Praça Solidária
 
-### Dentre as melhorias, incluem-se:
+### Dentre os aprimoramentos, incluem-se:
 
 - Explorar a possibilidade da elaboração de um blog, de modo a implementar uma interface web com banco de dados e JavaScript;
 - Adicionar a API “Click to Call” do WhatsApp, para facilitar o contato direto dos usuários por meio de um clique apenas, adicionando acessibilidade;
