@@ -72,7 +72,7 @@
                                         <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar Postagem</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Listar Posts</span> 2</a>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Listar Posts</span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,9 +88,6 @@
                                     </li>
                                     <li class="w-100">
                                         <a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
                                     </li>
                                 </ul>
                             </li>
