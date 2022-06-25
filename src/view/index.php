@@ -83,7 +83,7 @@ require_once "header.php";
         </div>
     </div>
 
-    <!-- Postagens insta -->
+    <!-- Postagens insta -- inicio >
 
     <div class="container">
         <div class="row">
@@ -155,6 +155,8 @@ require_once "header.php";
         </div>
 
     </div>
+
+    < fim !-- Postagens insta -->
 
     <!-- Assinar email postagem  -->
 
