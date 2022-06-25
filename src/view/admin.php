@@ -32,223 +32,297 @@
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <span class="fs-5 d-none d-sm-inline">Menu</span>
                     </a>
+                    
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+                        <!-- HOME -->
+                        
                         <li class="nav-item">
                             <a href="../view/index.php" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Voltar para o site</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar usuário</span></a>
-                                </li>
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
+                        
+                        
+                        <!-- AREA LOGADA -->
+                        
+                        <?php
+                        // LOGIN
+                        if(!isset($_SESSION['user']) || $_SESSION['user']==null){
+                        ?>
+                        
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle" onclick="toggleDiv('form-user-login')">
+                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Login</span> </a>
+                            </li>
+                        
+                        <?php
+                        }else{
+                        // MOSTRA MENU
+                        ?>    
+                         
+                            <!-- CADASTRO DE USUARIOS -->
+                        
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar usuário</span></a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <!-- BLOG -->
+                            
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar postagem</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar postagem</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
+                        
+                        <?php    
+                        } //end if   
+                        ?>
 
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                        </li>
+
                     </ul>
                     <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1">loser</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
-            <div class="container " id="form-user-registration">
+            <!-- AREA LOGADA -->
 
-                <?php
+            <?php
+            // ABRE PAINEL DE LOGIN
+            if(!isset($_SESSION['user']) || $_SESSION['user']==null){
+            ?>
+                <div class="container " id="form-user-login">
 
-                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                    if ($_GET['status'] === "success-add-user") { ?>
-                        <div class="alert alert-success mt-3" role="alert">
-                            Usuários cadastrado com sucesso!
-                        </div>
-                <?php
-                    }
-                }
-                ?>
-
-                <?php
-
-                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                    if ($_GET['status'] === "error01") { ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Todos os campos devem estar preenchidos!
-                        </div>
                     <?php
+
+                    if (isset($_POST["user"]) && isset($_POST["password"])) {
+                        
+                        //VERIFICAR LOGIN NO DB
+                        
+                        //usario ADMIN hardcoded para fins de teste
+                        if($_POST["user"]=="admin") && $_POST["password"]$_POST["password"]=="1nt3Gr@d0r"){
+                            $_SESSION["user"]=$_POST["user"];
+                            header('Location: ' . $_SERVER['PHP_SELF']);
+                        }else{
+                            $_SESSION["user"]=null;
+                            ?><div class="alert alert-danger mt-3" role="alert">
+                                Credenciais inv&aacute;lidas!
+                            </div><?php
+
+                        }
+                        
                     }
-                }
 
-                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                    if ($_GET['status'] === "error02") { ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Falha ao inserir usuário, tente novamente mais tarde.
-                        </div>
-                <?php
-                    }
-                }
-                ?>
+                    ?>
 
 
-                <form class=" g-3 needs-validation p-5" action="../controller/add-user.php" method="POST">
 
-                    <div class="col-md-4">
-                        <label for="name" class="form-label">Nome completo</label>
-                        <input type="text" class="form-control" name="user[name]" id="name" required>
-                        <div class="invalid-feedback">
-                            Digite seu nome completo!
-                        </div>
-                        <div class="valid-feedback">
-                            Nome válido!
-                        </div>
+                    <form class=" g-3 needs-validation p-5" method="POST">
 
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="email" class="form-label">Email</label>
-                        <div class="input-group ">
-                            <input type="email" class="form-control" name="user[email]" id="email" required>
-                            <div class="valid-feedback">
-                                Email válido!
-                            </div>
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Nome de usuario</label>
+                            <input type="text" class="form-control" name="user" id="name" required>
                             <div class="invalid-feedback">
-                                Digite um email válido!
+                                Digite seu nome de usuário
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="password" class="form-label">Senha</label>
-                        <div class="input-group ">
-                            <input type="password" class="form-control" name="user[password]" id="password" required>
                             <div class="valid-feedback">
-                                Senha válida!
+                                Dado válido!
                             </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="password" class="form-label">Senha</label>
+                            <div class="input-group ">
+                                <input type="password" class="form-control" name="user[password]" id="password" required>
+                                <div class="valid-feedback">
+                                    Digite sua senha
+                                </div>
+                                <div class="invalid-feedback">
+                                    Dado inválido!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+
+            <?php
+            }else{
+            // PERMITE ACESSO A PAINEIS DE ADMIN
+            ?>    
+                <div class="container " id="form-user-registration">
+
+                    <?php
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "success-add-user") { ?>
+                            <div class="alert alert-success mt-3" role="alert">
+                                Usuários cadastrado com sucesso!
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
+
+                    <?php
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "error01") { ?>
+                            <div class="alert alert-danger mt-3" role="alert">
+                                Todos os campos devem estar preenchidos!
+                            </div>
+                        <?php
+                        }
+                    }
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "error02") { ?>
+                            <div class="alert alert-danger mt-3" role="alert">
+                                Falha ao inserir usuário, tente novamente mais tarde.
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
+
+
+                    <form class=" g-3 needs-validation p-5" action="../controller/add-user.php" method="POST">
+
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" name="user[name]" id="name" required>
                             <div class="invalid-feedback">
-                                Sua senha deve ter:
-                                <ul>
-                                    <li>Deve ter tamanho mínimo 6 e no máximo 30 caracteres</li>
-                                    <li> Deve ter somente letras e numero e caractere especial(!#@$%&)</li>
-                                    <li>Deve ter no mínimo uma letra maiúscula e minúscula</li>
-                                    <li> Deve ter no mínimo um número</li>
-                                    <li> Deve ter no mínimo caractere especial(!#@$%&)</li>
-                                </ul>
+                                Digite seu nome completo!
+                            </div>
+                            <div class="valid-feedback">
+                                Nome válido!
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group ">
+                                <input type="email" class="form-control" name="user[email]" id="email" required>
+                                <div class="valid-feedback">
+                                    Email válido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Digite um email válido!
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Cadastrar</button>
-                    </div>
-                </form>
-            </div>
-
-
-            <div class="container" id="blog-create-post">
-                <?php
-
-                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                    if ($_GET['status'] === "success-create-post") { ?>
-                        <div class="alert alert-success mt-3" role="alert">
-                            Postagem criada com sucesso!
+                        <div class="col-md-4">
+                            <label for="password" class="form-label">Senha</label>
+                            <div class="input-group ">
+                                <input type="password" class="form-control" name="user[password]" id="password" required>
+                                <div class="valid-feedback">
+                                    Senha válida!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Sua senha deve ter:
+                                    <ul>
+                                        <li>Deve ter tamanho mínimo 6 e no máximo 30 caracteres</li>
+                                        <li> Deve ter somente letras e numero e caractere especial(!#@$%&)</li>
+                                        <li>Deve ter no mínimo uma letra maiúscula e minúscula</li>
+                                        <li> Deve ter no mínimo um número</li>
+                                        <li> Deve ter no mínimo caractere especial(!#@$%&)</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                <?php
-                    }
-                }
-                ?>
 
-                <?php
-
-
-                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                    if ($_GET['status'] === "error01") { ?>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Falha ao criar, tente novamente mais tarde.
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Cadastrar</button>
                         </div>
-                <?php
+                    </form>
+                </div>
+
+
+                <div class="container" id="blog-create-post">
+                    <?php
+
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "success-create-post") { ?>
+                            <div class="alert alert-success mt-3" role="alert">
+                                Postagem criada com sucesso!
+                            </div>
+                    <?php
+                        }
                     }
-                }
-                ?>
+                    ?>
+
+                    <?php
 
 
-                <form class=" g-3 needs-validation p-5" action="../controller/create-post.php" method="POST" enctype="multipart/form-data">
+                    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
+                        if ($_GET['status'] === "error01") { ?>
+                            <div class="alert alert-danger mt-3" role="alert">
+                                Falha ao criar, tente novamente mais tarde.
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
 
-                    <div class="col-md-4">
-                        <label for="name" class="form-label">Título</label>
-                        <input type="text" class="form-control" name="post[title]" id="post-title" required>
-                    </div>
 
-                    <div class="col-md-4">
-                        <label for="content" class="form-label">Texto</label>
-                        <textarea class="form-control" aria-label="" name="post[content]" id="post-content" required></textarea>
-                    </div>
+                    <form class=" g-3 needs-validation p-5" action="../controller/create-post.php" method="POST" enctype="multipart/form-data">
 
-                    <div class="col-md-4">
-                        <label for="image" class="form-label">Imagem</label>
-                        <input type="file" class="form-control pt-2" name="image" id="post-image" required>
-                    </div>
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Título</label>
+                            <input type="text" class="form-control" name="post[title]" id="post-title" required>
+                        </div>
 
-                    <div class="col-12 pt-2">
-                        <button class="btn btn-primary" type="submit">Criar postagem</button>
-                    </div>
-                </form>
-            </div>
+                        <div class="col-md-4">
+                            <label for="content" class="form-label">Texto</label>
+                            <textarea class="form-control" aria-label="" name="post[content]" id="post-content" required></textarea>
+                        </div>
 
+                        <div class="col-md-4">
+                            <label for="image" class="form-label">Imagem</label>
+                            <input type="file" class="form-control pt-2" name="image" id="post-image" required>
+                        </div>
+
+                        <div class="col-12 pt-2">
+                            <button class="btn btn-primary" type="submit">Criar postagem</button>
+                        </div>
+                    </form>
+                </div>
+
+            <?php    
+            } //end if   
+            ?>
 
         </div>
     </div>
 
 
-    <div class="container">
+    <!--div class="container">
         <div class="d-flex align-items-start">
             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
@@ -269,7 +343,7 @@
                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
             </div>
         </div>
-    </div>
+    </div-->
 
 </body>
 
