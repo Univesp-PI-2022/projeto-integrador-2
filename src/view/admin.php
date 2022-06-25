@@ -155,7 +155,7 @@
                         <div class="col-md-4">
                             <label for="password" class="form-label">Senha</label>
                             <div class="input-group ">
-                                <input type="password" class="form-control" name="user[password]" id="password" required>
+                                <input type="password" class="form-control" name="password" id="password" required>
                                 <div class="valid-feedback">
                                     Digite sua senha
                                 </div>
@@ -180,11 +180,10 @@
                     <?php
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "success-add-user") { ?>
-                            <div class="alert alert-success mt-3" role="alert">
+                        if ($_GET['status'] === "success-add-user") { 
+                            ?><div class="alert alert-success mt-3" role="alert">
                                 Usuários cadastrado com sucesso!
-                            </div>
-                    <?php
+                            </div><?php
                         }
                     }
                     ?>
@@ -192,20 +191,18 @@
                     <?php
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "error01") { ?>
-                            <div class="alert alert-danger mt-3" role="alert">
+                        if ($_GET['status'] === "error01") { 
+                            ?><div class="alert alert-danger mt-3" role="alert">
                                 Todos os campos devem estar preenchidos!
-                            </div>
-                        <?php
+                            </div><?php
                         }
                     }
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "error02") { ?>
-                            <div class="alert alert-danger mt-3" role="alert">
+                        if ($_GET['status'] === "error02") { 
+                            ?><div class="alert alert-danger mt-3" role="alert">
                                 Falha ao inserir usuário, tente novamente mais tarde.
-                            </div>
-                    <?php
+                            </div><?php
                         }
                     }
                     ?>
@@ -269,11 +266,10 @@
                     <?php
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "success-create-post") { ?>
-                            <div class="alert alert-success mt-3" role="alert">
+                        if ($_GET['status'] === "success-create-post") { 
+                            ?><div class="alert alert-success mt-3" role="alert">
                                 Postagem criada com sucesso!
-                            </div>
-                    <?php
+                            </div><?php
                         }
                     }
                     ?>
@@ -282,11 +278,10 @@
 
 
                     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['status'])) {
-                        if ($_GET['status'] === "error01") { ?>
-                            <div class="alert alert-danger mt-3" role="alert">
+                        if ($_GET['status'] === "error01") { 
+                            ?><div class="alert alert-danger mt-3" role="alert">
                                 Falha ao criar, tente novamente mais tarde.
-                            </div>
-                    <?php
+                            </div><?php
                         }
                     }
                     ?>
