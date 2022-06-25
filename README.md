@@ -5,7 +5,7 @@
 - Polos: Americana, Embu das Artes, São Bernardo do Campo
 
 ### Integrantes
-- Andrede Oliveira Mendes Casanova, 2000839
+- André de Oliveira Mendes Casanova, 2000839
 - Carlos Alberto Santos Resende, 2013143
 - Cassia Dias Santos, 2008372
 - Francisco Bernardo Stephanelli, 1801124
