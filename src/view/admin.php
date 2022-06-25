@@ -173,6 +173,7 @@
             ?>    
 
                 <!-- BLOG -->
+                <h3>Blog - Postagens</h3>
 
                 <div class="container" id="blog-create-post">
                     <?php
@@ -222,6 +223,7 @@
                 </div>
 
                 <!-- CADSTRO DE USUARIOS -->
+                <h3>Usuários - Cadastro</h3>
 
                 <div class="container " id="form-user-registration">
 
