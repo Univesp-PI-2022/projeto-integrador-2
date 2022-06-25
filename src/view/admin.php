@@ -69,10 +69,10 @@
                                     <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Blog</span></a>
                                 <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                     <li class="w-100">
-                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar Postagem</span></a>
+                                        &nbsp; > &nbsp;<a href="#" class="nav-link px-0" onclick="toggleDiv('blog-create-post')"> <span class="d-none d-sm-inline" id="blog-new-post">Criar Postagem</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Listar Posts</span></a>
+                                        &nbsp; > &nbsp;<a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Listar Posts</span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -84,10 +84,10 @@
                                     <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
                                 <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                     <li class="w-100">
-                                        <a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar usuário</span></a>
+                                        &nbsp; > &nbsp;<a href="#" class="nav-link px-0" onclick="toggleDiv('form-user-registration')"> <span class="d-none d-sm-inline">Cadastrar usuário</span></a>
                                     </li>
                                     <li class="w-100">
-                                        <a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
+                                        &nbsp; > &nbsp;<a href="#" class="nav-link px-0" onclick=""> <span class="d-none d-sm-inline">Exibir usuários</span></a>
                                     </li>
                                 </ul>
                             </li>
