@@ -65,7 +65,7 @@
         </div>
     </div>
     <div style="background-color:#F9DA39 ;">
-        <p  id = "copywriting">© Nomes - UNIVESP</p>
+        <p  id = "copywriting">©Praça Solidária - Desenvolvido por: Sala-002/Grupo-026 - PI-II-MMXXII - UNIVESP</p>
         
     </div>
     <!-- VLibras begin -->
