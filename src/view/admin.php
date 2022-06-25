@@ -121,7 +121,7 @@
                         //VERIFICAR LOGIN NO DB
                         
                         //usario ADMIN hardcoded para fins de teste
-                        if($_POST["user"]=="admin") && $_POST["password"]$_POST["password"]=="1nt3Gr@d0r"){
+                        if($_POST["user"]=="admin") && $_POST["password"]=="1nt3Gr@d0r"){
                             $_SESSION["user"]=$_POST["user"];
                             header('Location: ' . $_SERVER['PHP_SELF']);
                         }else{
