@@ -1,6 +1,5 @@
 <?php
 require_once "../view/header.php";
-
 ?>
 
 
@@ -13,17 +12,32 @@ require_once "../view/header.php";
                     <p class="fs-4">WhatsApp</p>
                     <p>Clique e seja redirecionado para o aplicativo</p>
                     <div class="row">
-                        <div class="col">
-                            <p class="p-2"><img src="../public/images/whatsapp.png" alt="icone whatsapp"> (11) 98192-3972</p>
+                        <div class="col-auto">
+                            <a href="https://wa.me/5511981923972" target="_blank" class="text-decoration-none link-dark">
+                                <p class="p-2">
+                                    <img src="../public/images/whatsapp.png" alt="icone whatsapp">
+                                    (11) 98192-3972
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <p class="p-2"><img src="../public/images/instagram.png" alt="icone instagram"> @pracasolidaria</p>
+                        <div class="col-auto">
+                            <a href="https://www.instagram.com/pracasolidaria/" target="_blank" class="text-decoration-none link-dark">
+                                <p class="p-2">
+                                    <img src="../public/images/instagram.png" alt="icone instagram">
+                                    @pracasolidaria
+                                </p>
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="p-2"><img src="../public/images/facebook.png" alt="icone facebook"> @pracasolidaria</p>
-                        </div>
+                        <!--  <div class="col">
+                            <a href="" target="_blank" class="text-decoration-none link-dark">
+                                <p class="p-2">
+                                    <img src="../public/images/facebook.png" alt="icone facebook">
+                                    @pracasolidaria
+                                </p>
+                            </a>
+                        </div> -->
 
                     </div>
                 </div>
@@ -67,9 +81,9 @@ require_once "../view/header.php";
         </div>
 
         <div class="row">
-        <p class="text-center fs-3 fw-bold">Horário de disponibilidade atendimento</p>
-        <p class="text-center fs-5">Segunda a Sábado da0 9:00 à0 18:00</p>
-        
+            <p class="text-center fs-3 fw-bold">Horário de disponibilidade atendimento</p>
+            <p class="text-center fs-5">Segunda a Sábado das 9:00 às 18:00</p>
+
         </div>
     </div>
 
@@ -77,5 +91,4 @@ require_once "../view/header.php";
 
 <?php
 require_once "../view/footer.php"
-
 ?>

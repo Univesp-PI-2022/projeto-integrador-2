@@ -18,23 +18,25 @@ require_once "header.php";
                 <div class="col-md-8">
                     <div class="card-body">
                         <p class="card-text">
-                            <h3>Venha fazer parte</h3>
-                            Grupo Multidisciplinar para Inclusão Social (Grupo Brasil), hoje com o Projeto Praça Solidaria para atender prontamente a pandemia do Covid-19 em caráter emergencial
-                            </p>
+                        <h3>Venha fazer parte</h3>
+                        Grupo Multidisciplinar para Inclusão Social (Grupo Brasil), hoje com o Projeto Praça Solidaria para atender prontamente a pandemia do Covid-19 em caráter emergencial
+                        </p>
                     </div>
                     <div class="row m-2">
-                        <div class="col-1">
+                        <!--  <div class="col-1">
                             <img src="../public/images/facebook.png" alt="icone facebook">
+                        </div> -->
+
+                        <div class="col-1">
+                            <a href="https://wa.me/5511981923972" target="_blank">
+                                <img src="../public/images/whatsapp.png" alt="icone whatsapp">
+                            </a>
                         </div>
 
                         <div class="col-1">
-                            <img src="../public/images/whatsapp.png" alt="icone whatsapp">
-
-                        </div>
-
-                        <div class="col-1">
-                            <img src="../public/images/instagram.png" alt="icone instagram">
-
+                            <a href="https://www.instagram.com/pracasolidaria/" target="_blank">
+                                <img src="../public/images/instagram.png" alt="icone instagram">
+                            </a>
                         </div>
                     </div>
                 </div>
