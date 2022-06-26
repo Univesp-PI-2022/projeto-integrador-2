@@ -6,7 +6,7 @@ include_once("header.php");
 
 <main>
     <div class="container">
-        <h1 class="text-center">A ong Projeto Brasil</h1>
+        <h1 class="text-center">A ONG Projeto Brasil</h1>
 
         <div class="d-flex">
             <img width="300rem" height="300rem" src="../public/images/main-theme.PNG" alt="vamos ajudar a quem precisa e tem fome">
