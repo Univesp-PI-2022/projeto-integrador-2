@@ -44,11 +44,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.php">Ente em contato</a>
+                            <a class="nav-link" href="contato.php">Entre em contato</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.php">Blog</a>
+                            <a class="nav-link" href="all-posts.php">Blog</a>
                         </li>
 
                         <li class="nav-item">
