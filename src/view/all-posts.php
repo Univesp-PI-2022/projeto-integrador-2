@@ -44,7 +44,7 @@ require_once "header.php";
         <?php }
         ?>
 
-        <nav aria-label="Page navigation ">
+        <nav aria-label="Page navigation " class="m-3">
             <ul class="pagination">
                 <?php
 
