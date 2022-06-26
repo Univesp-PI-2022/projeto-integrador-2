@@ -29,7 +29,7 @@ require_once "header.php";
 
 
         $posts = DatabaseCon::getAll("title like '%$q%' OR content like '%$q%'", "creation_date DESC", " $skipPost,$postPerpage", "posts");
-        $numberOfPosts = sizeof(DatabaseCon::getAll("title like '%$q%' OR content like '%$q%'", "creation_date DESC", "", "posts"));
+        $numberOfPosts = ceil(sizeof(DatabaseCon::getAll("title like '%$q%' OR content like '%$q%'", "creation_date DESC", "", "posts")));
  
         foreach ($posts as $key => $post) {
             if ($key !== 0) { ?>
