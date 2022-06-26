@@ -19,7 +19,7 @@ require_once "header.php";
         }
 
         $posts = DatabaseCon::getAll(null, "creation_date DESC", " $skipPost,$postPerpage", "posts");
-        $numberOfPosts = sizeof(DatabaseCon::getAll(null, "creation_date DESC", null, "posts")) / $postPerpage;
+        $numberOfPages = ceil(sizeof(DatabaseCon::getAll(null, "creation_date DESC", null, "posts")) / $postPerpage);
 
         foreach ($posts as $key => $post) {
             if ($key !== 0) { ?>
@@ -48,7 +48,7 @@ require_once "header.php";
             <ul class="pagination">
                 <?php
 
-                for ($i = 1; $i <= $numberOfPosts; $i++) { ?>
+                for ($i = 1; $i <= $numberOfPages; $i++) { ?>
 
                     <li class="page-item"><a class="page-link" href="./all-posts.php?p=<?php echo $i ?>"><?php echo $i ?></a></li>
 
