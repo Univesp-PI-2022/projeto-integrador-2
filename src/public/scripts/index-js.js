@@ -40,18 +40,18 @@ function subscribeNewsletter() {
             let statusResponse = response.status;
             if (statusResponse === 201) {
                 let alertSuccess = document.getElementById("success-subscribe-newsletter");
-                alertSuccess.classList.remove("invisible")
-                alertSuccess.classList.add("visible")
+                alertSuccess.classList.remove("d-none")
+                alertSuccess.classList.add("d-block")
             }
             if (statusResponse === 400) {
                 let alertErroInvalidEmail = document.getElementById("invalid-email");
-                alertErroInvalidEmail.classList.remove("invisible")
-                alertErroInvalidEmail.classList.add("visible")
+                alertErroInvalidEmail.classList.remove("d-none")
+                alertErroInvalidEmail.classList.add("d-block")
             }
             if (statusResponse === 500) {
                 let alertErroSubscribre = document.getElementById("erro-subscribe-newsletter");
-                alertErroSubscribre.classList.remove("invisible")
-                alertErroSubscribre.classList.add("visible")
+                alertErroSubscribre.classList.remove("d-none")
+                alertErroSubscribre.classList.add("d-block")
             }
 
         }

@@ -27,13 +27,13 @@ require_once "header.php";
                             <img src="../public/images/facebook.png" alt="icone facebook">
                         </div> -->
 
-                        <div class="col-1">
+                        <div class="col-2">
                             <a href="https://wa.me/5511981923972" target="_blank">
                                 <img src="../public/images/whatsapp.png" alt="icone whatsapp">
                             </a>
                         </div>
 
-                        <div class="col-1">
+                        <div class="col-2">
                             <a href="https://www.instagram.com/pracasolidaria/" target="_blank">
                                 <img src="../public/images/instagram.png" alt="icone instagram">
                             </a>
@@ -66,7 +66,7 @@ require_once "header.php";
 
             foreach ($posts as  $post) { ?>
 
-                <div class="col-3 col-sm-3">
+                <div class="col-sm-3 col-md-5 m-1">
                     <a href="./post.php?id=<?php echo $post->id  ?>" style="text-decoration:none ;">
                         <div class="card">
                             <img src="../public/images/pixel.png" style="background-image:url(<?php echo $post->image ?>) ;" class="card-img-top post-image" alt="...">
@@ -172,27 +172,18 @@ require_once "header.php";
             <div class="d-flex input-group">
                 <div class="p-2 flex-grow-1 bd-highlight ">
                     <input type="email" class="form-control" id="subscribe-newsletter" name="email">
-                    <div class="valid-feedback">
-                        Email válido!
+                    <div class="p-2 bd-highlight">
+                        <button type="button" class="btn btn-primary" id="newsletter" onclick="subscribeNewsletter()">Receber atualizações</button>
                     </div>
-                    <div class="invalid-feedback">
-                        Digite um email válido!
-                    </div>
-
-                    <div class="alert alert-success invisible" role="alert" id="success-subscribe-newsletter">
+                    <div class="alert alert-success d-none" role="alert" id="success-subscribe-newsletter">
                         Em breve você receberá todas as nossas novidades em seu email!
                     </div>
-                    <div class="alert alert-danger invisible" role="alert" id="erro-subscribe-newsletter">
+                    <div class="alert alert-danger d-none" role="alert" id="erro-subscribe-newsletter">
                         Erro ao cadastrar email, tente novamente mais tarde!
                     </div>
-                    <div class="alert alert-danger invisible" role="alert" id="invalid-email">
+                    <div class="alert alert-danger d-none" role="alert" id="invalid-email">
                         Email inválido!
                     </div>
-
-                </div>
-
-                <div class="p-2 bd-highlight">
-                    <button type="button" class="btn btn-primary" id="newsletter" onclick="subscribeNewsletter()">Receber atualizações</button>
                 </div>
             </div>
         </form>

@@ -29,7 +29,7 @@ require_once "header.php";
             ?>
 
             <div class="row">
-                <div class="col-3 col-sm-3">
+                <div class="col-sm-3 col-md-5 m-1">
                     <div class="card">
                         <img src="../public/images/pixel.png" style="background-image:url(<?php echo $post->image ?>) ;" class="card-img-top post-image" alt="...">
                     </div>

@@ -7,9 +7,6 @@
   margin-left: 0%;
   margin-right: 0%;
 }
-.carousel-inner img {
-  height: auto;
-}
 
 .sem_margem {
   margin: 0% !important;
@@ -116,4 +113,8 @@ footer {
   background-color: #f1f2f3;
   background-position: center center;
 }
+
+
+
+/* Reponsividade */
 

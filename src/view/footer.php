@@ -1,17 +1,23 @@
 </div>
+
+
+
+
+
+
 <footer style="background-color:#FFE977 ;" class="mb-0">
     <!--Footer  -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-image: url('../public/images/Pattern_Rock.svg');
+    background-repeat: no-repeat">
         <div class="row">
             <!-- Logo da ong -->
-            
+
             <div class="col-5">
-                
+
                 <div class="row">
                     <!--Logo  -->
                     <div class="col sem_padding">
                         <div class="contain" style="width: 10rem;">
-                            <img id="bolinhas_1" class="bolinhas" src="../public/images/Pattern_Rock.svg" alt="bolinhas">
                             <img id="bandeira" src="../public/images/bandeira.svg" alt="bandeira do Brasil">
                         </div>
 
@@ -48,10 +54,10 @@
             </div>
             <!-- Redes Sociais -->
             <div class="col pt-3">
-                
+
                 <ul style="list-style: none;">
 
-                   <!--  <li class="p-2"> <img src="../public/images/facebook.png" alt="icone facebook"></li> -->
+                    <!--  <li class="p-2"> <img src="../public/images/facebook.png" alt="icone facebook"></li> -->
                     <a href="https://wa.me/5511981923972" target="_blank">
                         <li class="p-2"><img src="../public/images/whatsapp.png" alt="icone whatsapp"></li>
                     </a>
@@ -60,13 +66,13 @@
 
                     </a>
                 </ul>
-                
+
             </div>
         </div>
     </div>
     <div style="background-color:#F9DA39 ;">
-        <p  id = "copywriting">©Praça Solidária - Desenvolvido por: Sala-002/Grupo-026 - PI-II-MMXXII - UNIVESP</p>
-        
+        <p id="copywriting">©Praça Solidária - Desenvolvido por: Sala-002/Grupo-026 - PI-II-MMXXII - UNIVESP</p>
+
     </div>
     <!-- VLibras begin -->
     <div vw class="enabled">
@@ -80,6 +86,26 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <!-- VLibras end -->
+
+    <!-- Menu mobile -->
+    <div class="bottom-menu" style=" z-index: 4;">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item w-25 mx-auto text-center">
+                <a class="nav-link" aria-current="page" href="#"><img src="../public/images/botao-home.png"></a>
+            </li>
+            <li class="nav-item w-25 mx-auto text-center">
+                <a class="nav-link " href="#"><img src="../public/images/group.png"></a>
+            </li>
+            <li class="nav-item w-25 mx-auto text-center">
+                <a class="nav-link" href="#"><img src="../public/images/solidarity.png"></a>
+            </li>
+            <li class="nav-item w-25 mx-auto text-center">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="../public/images/chat.png"></a>
+            </li>
+        </ul>
+
+    </div>
 </footer>
 </body>
 

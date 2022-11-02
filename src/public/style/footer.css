@@ -1,0 +1,16 @@
+.bottom-menu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(77, 172, 227);
+   
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-menu {
+        display: block;
+    }
+}
+
