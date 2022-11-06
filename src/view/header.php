@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../public/style/index-css.css">
     <link rel="stylesheet" href="../public/style/footer.css">
+    <link rel="stylesheet" href="../public/style/quem-somos.css">
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="../public/scripts/index-js.js"></script>
