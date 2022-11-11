@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Praça Solidária</string>
+    <string name="app_url">https://pracasolidaria.projeto-integrador.app.br/src/view/all-posts.php</string>
+    <string name="rss_url">https://pracasolidaria.projeto-integrador.app.br/src/view/rss.php</string>
+    <string name="notification_title">Novas publicações da Praça Solidária</string>
+    <string name="notification_text">Existem # novas publicações da Praça Solidária</string>
+    <string name="channel_name">Praça Solidária</string>
+    <string name="channel_description">Publicações da Praça Solidária</string>
+</resources>
