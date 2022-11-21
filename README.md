@@ -1,23 +1,24 @@
-# Praça Solidária - PI-II 2022
-## Projeto Integrador - UNIVESP - Semestre 1/2022
+# Praça Solidária - PI-III 2022
+## Projeto Integrador - UNIVESP - Semestre 2/2022
 
-### Sala 002 - Grupo 026
-- Polos: Americana, Embu das Artes, São Bernardo do Campo
+### SALA-001 GRUPO-065
+- Polos: Embu das Artes, Francisco Morato, São Bernardo do Campo / SP
 
 ### Integrantes
-- André de Oliveira Mendes Casanova, 2000839
-- Carlos Alberto Santos Resende, 2013143
-- Cassia Dias Santos, 2008372
-- Francisco Bernardo Stephanelli, 1801124
-- Guilherme Padilha Batista, 2011386
-- Marcos Lohmann, 2006775
-- Rafael Carneiro de Souza Conrado, 2001370
-- Victoria Sayuri Ishibaru da Silva, 2007625
+- ANA PAULA CELIS – 2002308
+- ANDRÉ DE OLIVEIRA MENDES CASANOVA – 2000839
+- CAIO REIMANN ROSSINI – 2002651
+- CASSIA DIAS SANTOS – 2008372
+- GUILHERME PADILHA BATISTA – 2011386
+- MARCOS LOHMANN – 2006775
+- RAFAEL CARNEIRO DE SOUZA CONRADO – 2001370
+- VICTORIA SAYURI ISHIBARU DA SILVA – 2007625
+
 
 ### Orientador(a)
-- Ana Paula de Aquino Caixeta
+- Aparecida Do Carmo Fernandes Cheroti
 
-### PJI240Projeto Integrador Em Computação II
+### PJI310 Projeto Integrador Em Computação III
 
 Solução web para divulgação institucional do projeto Praça Solidária da ONG Grupo Brasil - Multidisciplinar para Inclusão Social, através de um software com framework web que utilize banco de dados, inclua script web (Javascript), nuvem, uso de API, acessibilidade, controle de versão e testes.
 
@@ -33,3 +34,6 @@ Aprimorar a Solução Web desenvolvida no PI passado para divulgação instituci
 - Permitir postagem de campanhas e faixas destacadas solicitando doações de itens de maior necessidade;
 - Adicionar a API de “Traçar Rota” do Google Maps, para facilitar às pessoas em localizar os endereços das ações sociais;
 - Implementação da API VLibras para tradução do conteúdo textual do website em liguagem brasileira de sinais com o auxílio de um personagem digital animado.
+- Desenvolvimento de um APP para dispositivos móveis
+- Publicação de uma API para integração com outros aplicativos de notícias
+
