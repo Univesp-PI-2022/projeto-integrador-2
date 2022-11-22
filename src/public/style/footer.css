@@ -12,5 +12,13 @@
     .bottom-menu {
         display: block;
     }
+    
+    #endereco {
+        display: none;
+    }
+    
+    #mapa_site {
+        display: none;
+    }
 }
 
