@@ -29,7 +29,7 @@
                 </div>
             </div>
             <!--Endereço -->
-            <div class="col footer_infos">
+            <div class="col footer_infos" id = "endereco">
                 <div class="row">
                     <p class="text"><b>Entre em contato conosco</b></p>
                 </div>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <!-- Mapa do site -->
-            <div class="col footer_infos">
+            <div class="col footer_infos" id = "mapa_site">
                 <div class="row">
                     <p class="text"><b>Mapa do site</b></p>
                 </div>
