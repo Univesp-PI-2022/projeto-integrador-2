@@ -21,7 +21,7 @@
 
 
     $xml = new SimpleXMLElement('<rss/>');
-    $xml->addAttribute('encoding', 'UTF-8');
+    //$xml->addAttribute('encoding', 'UTF-8');
     $channel = xml->addChild('channel');
     $title = $channel->addChild('title', 'Praça Solidária - RSS');
     $link = $channel->addChild('link', 'https://pracasolidaria.projeto-integrador.app.br');
