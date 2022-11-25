@@ -21,8 +21,8 @@
 
 
     $xml = new SimpleXMLElement('<rss/>');
-    //$xml->addAttribute('encoding', 'UTF-8');
-    $channel = xml->addChild('channel');
+    $xml->addAttribute('encoding', 'UTF-8');
+    $channel = $xml->addChild('channel');
     $title = $channel->addChild('title', 'Praça Solidária - RSS');
     $link = $channel->addChild('link', 'https://pracasolidaria.projeto-integrador.app.br');
     $description = $channel->addChild('description', 'Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!');
