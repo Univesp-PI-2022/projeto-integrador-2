@@ -20,13 +20,15 @@
     $posts = DatabaseCon::getAll($whereSql, "creation_date DESC", null, "posts");
 
 
-    $xml = new SimpleXMLElement('<channel/>');
-    $title = $xml->addChild('title', 'Praça Solidária - RSS');
-    $link = $xml->addChild('link', 'https://pracasolidaria.projeto-integrador.app.br');
-    $description = $xml->addChild('description', 'Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!');
+    $xml = new SimpleXMLElement('<rss/>');
+    $xml->addAttribute('encoding', 'UTF-8');
+    $channel = xml->addChild('channel');
+    $title = $channel->addChild('title', 'Praça Solidária - RSS');
+    $link = $channel->addChild('link', 'https://pracasolidaria.projeto-integrador.app.br');
+    $description = $channel->addChild('description', 'Somos o “Projeto Solidário sem FOME”! Somos um grupo multidisciplinar para INCLUSÃO SOCIAL!');
     
     foreach ($posts as $post) {
-        $item = $xml->addChild('item');
+        $item = $channel->addChild('item');
         $title = $item->addChild('title', $post->title);
         $link = $item->addChild('link', 'https://pracasolidaria.projeto-integrador.app.br/src/view/post.php?id=' . $post->id);
         $description = $item->addChild('description', $post->content);
