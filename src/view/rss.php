@@ -5,7 +5,7 @@
 
     $today = new DateTime();
 
-    if (isset($_GET['date'])) {        
+    if (isset($_GET['data'])) {        
         if (preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $_GET['data'])) {
             $whereDate = $_GET['data'];
         } else {
@@ -16,7 +16,7 @@
         $whereDate = $today->format('Y-m-d');
     }
 
-    $whereSql = "creation_date BETWEEN '" . $_GET['data'] . " 00:00:00' AND '" . $_GET['data'] . " 23:59:59'";
+    $whereSql = "creation_date BETWEEN '" . $whereDate . " 00:00:00' AND '" . $whereDate . " 23:59:59'";
     $posts = DatabaseCon::getAll($whereSql, "creation_date DESC", null, "posts");
 
 
