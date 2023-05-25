@@ -34,7 +34,7 @@
                     <p class="text"><b>Entre em contato conosco</b></p>
                 </div>
                 <div class="row">
-                    <p class="text">Telefone: 4665-2538 <br> Rua Dom José Alves, 251 <br> Bairro da paz, São Paulo,SP</p>
+                    <p class="text">Telefones: (11) 98192-3972, (11) 96465-6699 ou (15) 99720-0664 <br> Avenida Marechal Juarez Távora, 708, Super Quadra Morumbi <br> São Paulo/SP, CEP 05750-001</p>
                 </div>
             </div>
             <!-- Mapa do site -->
